@@ -534,7 +534,7 @@ body{
         display: flex;
         justify-content: space-between;
         position: fixed;
-        width: 90vw;
+        width: ;
     }
     .menuicon{
         display: flex;
@@ -645,4 +645,11 @@ body{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
+.team-card-title{
+	font-size: 20px;
+}
+.team-card-role{
+	font-size:15px;
+}
+
 }

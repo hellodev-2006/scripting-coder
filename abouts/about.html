@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <nav class="menu-bar">
+		<div class="logo">
+			<p><a href=""><span class="s-logo">S</span>cripting code<span class="r-logo">R</span></a></p>
+		</div>
+		<div class="menu-access">
+			<ul class="menu-access-list">
+				<li><a href="S:\scripting_coder\index.html">Home</a></li>
+                <li><a onclick="scrolldiv();">About</a></li>
+                <li><a href="S:\scripting_coder\projects\project.html">Projects</a></li>
+                <li><a href="S:\scripting_coder\contacts\contact.html">Contact</a></li>
+				<i class="ri-close-line close-icon" onclick="hidemenu();"></i>
+			</ul>
+			<ul class="menuicon">
+				<li onclick="showmenu();"><i class="ri-menu-line menu-icon"></i></li>
+			</ul>
+		</div>
+	</nav>
+    <main>        
+		<div class="scrolltop">
+			<i class="ri-arrow-up-line scroll-icon"></i>
+		</div>
+        <section id="about">
+            <h1 class="title"><i class="ri-information-line"></i>ABOUT US</h1>
+            <p class="sub-title">Welcome to scripting_coder, where your requirements meet their perfect matches! We are a dedicated team of professionals committed to delivering 
+                top-notch freelance services across a wide range of industries. Our mission is to connect talented freelancers with clients who need their 
+                skills, creating opportunities for growth, innovation, and success.
+            </p>
+            <h2>Our story</h2>
+            <p class="sub-title-story">
+                Founded in 2024, scripting_coder was born out of a passion for empowering individuals to take control of their careers and businesses to achieve their goals. Over the years, we have grown into a thriving community of skilled freelancers and satisfied clients, all working together to achieve exceptional results.
+            </p>
+            <h3>Why Choose Us?</h3>
+            <p class="sub-title-story">
+                Quality Assurance: We maintain high standards to ensure that every project meets your expectations.
+                Diverse Talent Pool: Our freelancers come from various backgrounds and industries, offering a wide range of skills.
+                User-Friendly Platform: Our website is designed to be intuitive and easy to use, making the hiring process quick and hassle-free.
+                Dedicated Support: Our support team is always here to help you with any questions or concerns.
+                Success Stories
+                We've helped thousands of clients achieve their goals through our freelance services. From startups to established businesses, our freelancers have contributed to a wide range of successful projects. Check out our testimonials to see what our clients have to say about their experiences with scripting_coder.
+            </p>
+            <h4>Our Freelancers</h4>
+            <p class="sub-title-story">
+                Our freelancers are the heart of our community. We pride ourselves on attracting top talent from around the world. Each freelancer on our platform goes through a rigorous vetting process to ensure they have the expertise and experience necessary to deliver outstanding work. When you hire a freelancer from scripting_coder, you can trust that you're getting the best in the business.
+            </p>
+        </section>
+    </main>
+</body>
+<script>
+	let scrollTop = document.querySelector('.scrolltop');
+	scrollTop.onclick=function(){
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth"
+		});
+	}	
+	function scrolldiv() {
+        var elem = document.getElementById("about");
+        elem.scrollIntoView();
+    }
+
+	const sideBar= document.querySelector('.menu-access-list');
+	function showmenu(){
+		sideBar.style.display='flex';
+	}
+	function hidemenu(){
+		sideBar.style.display='none';
+	}
+</script>
+</html>

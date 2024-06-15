@@ -1,0 +1,648 @@
+body{
+    background-color: var(--tea-green);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+
+:root{
+    --eggshell: #faf3ddff;
+    --tea-green: #c8d5b9ff;
+    --cambridge-blue: #8fc0a9ff;
+    --verdigris: #68b0abff;
+    --viridian: #4a7c59ff;
+    --mint-cream: #f7fff7ff;
+    --rich-black: #051014ff;
+    --taupe-gray: #92828dff;
+    --asparagus: #679436ff;
+    --myrtle-green: #3c787eff;    
+    --dark-slate-gray: #395e66ff;
+    --myrtle-green: #387d7aff;
+    --sea-green: #32936fff;
+    --jade: #26a96cff;
+    --kelly-green: #2bc016ff;
+}
+.menu-bar{
+	display: grid;
+	grid-template-columns: 30% 70%;
+    background-color: rgba(250, 243, 221, 0.266);
+    backdrop-filter: blur(80px);
+    position: fixed;
+    width: 95vw;
+    margin-top: 10px;
+	padding: 0 15px;
+	border-radius: 20px;
+    top: 0;
+    right: 0;
+}
+
+.menu-bar::selection{
+  background-color: transparent;
+  
+}
+
+.logo a{
+	font-size: 20px;
+	text-decoration: none;
+	color: var(--viridian);
+}
+
+.s-logo{
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.r-logo{
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.menu-access{
+    display: grid;
+    grid-template-columns: 100% 0%;
+}
+.menu-access-list{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+.menu-access-list li a{
+	text-decoration: none;
+	color: var(--viridian);
+	font-size: 20px;
+	font-weight: 400;
+  cursor: pointer;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.close-icon{
+    display: none;
+}
+
+.menuicon{
+    display: none;
+}
+
+.menu-access-list-active{
+    display: none;
+}
+
+.landing-pages{
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+.landing-page h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--viridian);
+    margin-bottom: 4px; 
+    padding-top: 40vh;
+}
+
+.landing-page p{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--viridian);
+}
+
+.landing-page p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--cambridge-blue); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .2em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end);
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+
+  .caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--viridian);
+    letter-spacing: 3px;
+    margin-top: 4px;
+  }
+
+  #about{
+    height: auto;
+  }
+
+  #about h1{
+    font-size: 55px;
+    font-weight: 600;
+    color: var(--viridian);
+    text-align: center;
+    margin-bottom: 15px; 
+    padding-top: 13px;
+  }
+  #about h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--viridian);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .sub-title{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    justify-content: center;
+    color: var(--viridian);
+  }
+
+  .about-img{
+    height: 85vh;
+    width: 40vw;
+    padding:0 10px;
+    border-radius: 25px;
+    float: left;
+  }
+  .sub-title-story{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    justify-content: center;
+    color: var(--viridian);
+    margin-top: 0px;
+  }  
+  #about h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--viridian);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  } 
+  #about h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--viridian);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #about h5{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--viridian);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .scrolltop{
+    background-color: var(--viridian);
+    color: var(--tea-green);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .scroll-icon{
+    font-size: 20px;
+  }  
+  .more-about{
+    margin-top: 70px;
+    text-align: center;
+  }
+  .more-about a{
+    text-decoration: none;
+    background-color: var(--viridian);
+    color: var(--tea-green);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #projects{
+    height: auto;
+    margin-top: 20vh;
+    padding: 10px;
+  }
+  .card{
+    width: auto;
+    height: 60vh;
+    background-color: rgba(73, 124, 89, 0.163);
+    margin-top: 30px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  .card-img{
+    height: 30vh;
+    width: 100%;
+    padding: 0px;
+    border-radius: 20px;
+    background-color: var(--mint-cream);
+  }
+  #projects h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--viridian);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-between;
+    gap: 4px;
+  }
+  .card-title{
+    color: var(--viridian);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .card-description{
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--myrtle-green);
+  }
+  .developer{
+    text-align: center;
+    margin-top: 9px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--viridian);
+  }
+  .more-projects{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .more-projects a{
+    text-decoration: none;
+    background-color: var(--viridian);
+    color: var(--tea-green);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #projects a{
+    text-decoration: none;
+  }  
+  #team{
+    padding: 10px;
+  }
+  #team a{
+    text-decoration: none;
+  }
+  #team h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15vh;
+    color: var(--viridian);
+    font-weight: 600;
+  }
+  .team-card-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+  }
+  .team-card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(73, 124, 89, 0.163);
+    padding: 20px;
+    border-radius: 20px;
+    height: 60vh;
+  }
+  .team-card-img{
+    border-radius: 50%;
+    width: 40%;
+    height: 60%;
+    background-color: var(--eggshell);
+  }
+  .team-card-title{
+    font-size: 30px;
+    color: var(--sea-green);
+    font-weight: 600;
+  }
+  .team-card-role{
+    font-size: 20px;
+    color: var(--myrtle-green);
+    font-weight: 400;
+  }
+  .team-card-icons a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .linkedin{
+    color: #0077b5;
+    font-size: 20px;
+    background-color: rgba(74, 124, 89, 0.16);
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .linkedin:hover{
+    background-color: rgba(74, 124, 89, 0.033);
+    color: #0077b5;
+  }
+  
+  .instagram{
+    color: #de0606;
+    font-size: 20px;
+    background-color: rgba(74, 124, 89, 0.16);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .instagram:hover{
+    background-color: rgba(74, 124, 89, 0.033);
+    color: #de0606;
+  }
+  
+  .google{
+    color: #2f079c;
+    font-size: 20px;
+    background-color: rgba(74, 124, 89, 0.16);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .google:hover{
+    background-color: rgba(74, 124, 89, 0.033);
+    color: #2f079c;
+  }
+  
+  .github{
+    color: #2c3337;
+    font-size: 20px;
+    background-color: rgba(74, 124, 89, 0.16);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .github:hover{
+    background-color: rgba(74, 124, 89, 0.033);
+    color: #2c3337;
+  }
+  .Footer{
+    height: auto;
+    background-color: rgba(73, 124, 89, 0.163);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .content-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(50, 147, 111, 0.094);    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .content{
+    width: 400px;
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+  }
+  .content h1{
+    color: var(--dark-slate-gray);
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .content p{
+    color: var(--dark-slate-gray);
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .links h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-slate-gray);
+  }
+  .links a{
+    color: var(--dark-slate-gray);
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .followlinks{
+    background-color: rgba(38, 107, 82, 0.183);
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  .followlinks h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(47, 84, 92);
+  }
+  .follow-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .follow-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .follow-linkedin{
+    color: #0077b5;
+  }
+  
+  .follow-linkedin:hover{
+    color: #04324b;
+  }
+  
+  .follow-instagram{
+    color: #ae0505;
+  }
+  
+  .follow-instagram:hover{
+    color: #04324b;
+  }
+  .follow-github{
+    color: #2c3337;
+  }
+  
+  .follow-github:hover{
+    color: #04324b;
+  }
+  
+  .follow-google{
+    color: #2f079c;
+  }
+  
+  .follow-google:hover{
+    color: #04324b;
+  }
+  .copyright{    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(38, 107, 82, 0.319);
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  .copyright p{
+    color: rgb(22, 38, 41);
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .copyright p span{
+    color: rgb(31, 62, 68);
+    font-weight: 700;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media only screen and (max-width: 950px){
+    .menu-bar{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 90vw;
+    }
+    .menuicon{
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+    .menu-icon{
+        color: var(--viridian);
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .close-icon{        
+        display: block;
+        position: absolute;
+        font-size: 25px;
+        color: var(--viridian);
+        font-weight: 500;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+    .menu-access-list{
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        background-color: rgba(200, 213, 185, 0.891);
+        backdrop-filter: blur(100px);
+        text-align: center;
+        right: 0;
+        margin-right: 5px;
+        padding: 10px;
+        width: 200px;
+        height: 95vh;
+        float: left;
+        margin-top: 0;
+        border-radius: 20px;
+        z-index: 999;
+        box-shadow: 0.2px 0.2px 5px var(--rich-black);
+    }
+    .menu-access-list li{
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        left: 0;
+    }
+    .menu-access-list li a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--viridian);
+    }
+    .landing-page h3{
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--viridian);
+    }
+    
+    .landing-page p{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--viridian);
+    }
+    
+    .landing-page p{
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid var(--cambridge-blue); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .2em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end);
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 80% }
+      }
+      #about{
+        top: 0; 
+        height: auto;
+      }
+      #about h1{
+        font-size: 50px;
+      }
+     .about-img{
+        display: none;
+     }     
+    .card-container{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-content: space-between;
+      gap: 4px;
+    }     
+    .team-card-img{
+      width: 60%;
+      height: 30%;
+    }    
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(50, 147, 111, 0.094);    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}

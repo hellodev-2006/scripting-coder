@@ -666,9 +666,8 @@ margin-top: 50%;
 
 @media only screen and (max-width: 450px){
   .menu-bar{
-    width: 79%;
-    left: 0;
-    margin-left: 8px;
+    width: 100%;
+    margin: 10px;
   }
   .content p{
     overflow-wrap: break-word;

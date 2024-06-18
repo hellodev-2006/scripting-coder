@@ -38,4 +38,3 @@ histo=()=>{
 	document.getElementById('inp').value=histo;
 }
 
-

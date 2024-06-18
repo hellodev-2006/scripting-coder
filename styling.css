@@ -665,7 +665,12 @@ margin-top: 50%;
 }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 400px){
+  .menubar{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: fixed;
+  }
   .content p{
     overflow-wrap: break-word;
     width: 300px;

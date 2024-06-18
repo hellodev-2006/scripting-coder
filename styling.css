@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-color: var(--tea-green);
   font-family: "Lato", sans-serif;
@@ -541,8 +546,6 @@ cursor: pointer;
       justify-content: space-between;
       position: fixed;
       width: 90vw;
-      left: 0;
-      margin-left: 4px;
   }
   .menuicon{
       display: flex;

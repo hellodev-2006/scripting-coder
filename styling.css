@@ -566,7 +566,7 @@ cursor: pointer;
   .menu-access-list{
       display: none;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       position: absolute;
       background-color: rgba(200, 213, 185, 0.891);
       backdrop-filter: blur(100px);

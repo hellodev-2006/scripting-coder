@@ -33,4 +33,9 @@ let valu=document.getElementById('inp').value
 }
 
 }
+histo=()=>{
+	let histo=localStorage.getItem('history');
+	document.getElementById('inp').value=histo;
+}
+
 

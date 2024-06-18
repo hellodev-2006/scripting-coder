@@ -661,6 +661,9 @@ margin-top: 50%;
 .team-card-role{
   font-size: 15px;
 }
+.content p{
+  overflow-wrap: break-word;
+}
 }
 
 @media only screen and (max-width: 450px){

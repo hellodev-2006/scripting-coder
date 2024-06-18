@@ -244,7 +244,7 @@ cursor: pointer;
 }
 #projects{
   height: auto;
-  margin-top: 20vh;
+  margin-top: 15vh;
   padding: 10px;
 }
 .card{
@@ -670,8 +670,10 @@ margin-top: 50%;
   .menu-bar{
     width: 79%;
     left: 0;
+    margin-left: 5px;
   }
   .content p{
     overflow-wrap: break-word;
+    width: 150px;
   }
 }

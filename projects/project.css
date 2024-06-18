@@ -254,7 +254,7 @@ body{
   .card-title{
     color: var(--viridian);
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
   }
   .card-description{

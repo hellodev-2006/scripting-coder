@@ -541,6 +541,8 @@ cursor: pointer;
       justify-content: space-between;
       position: fixed;
       width: 90vw;
+      left: 0;
+      margin-left: 4px;
   }
   .menuicon{
       display: flex;

@@ -679,5 +679,7 @@ margin-top: 50%;
   .scrolltop{
     right: 0;
     bottom: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
 }
